@@ -6,7 +6,7 @@
 
 사용법
 
-해당 레포지토리를 clone하여 사용해주세요,
+해당 레포지토리를 clone하여 사용해주세요,<br />
 git remote를 사용전에 꼭! 변경해주세요!!
 
 install : pnpm install
