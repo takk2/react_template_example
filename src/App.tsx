@@ -1,10 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
+import MainProvider from './lib/providers/Main';
 import Router from './Router';
 
 function App() {
   return (
-    <>
-      <Router />
-    </>
+    <MainProvider>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </MainProvider>
   );
 }
 

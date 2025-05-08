@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import { useCounterStore } from '../../stores';
 
 const Home = () => {
+  const { count, increment, decrement } = useCounterStore();
+
   return (
     <Wrapper>
       <h1>react_template</h1>
-      <Box></Box>
+      <p>{count}</p>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
     </Wrapper>
   );
 };
@@ -14,11 +19,11 @@ export default Home;
 const Wrapper = styled.div`
   width: 100dvw;
   height: 100dvh;
-`;
 
-const Box = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  margin: 0px 10px;
+  button {
+    padding: 10px 8px;
+    width: 100px;
+    font-size: 30px;
+    border: 1px solid #000;
+  }
 `;

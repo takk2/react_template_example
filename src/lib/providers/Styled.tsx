@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
-import GlobalStyle from '../../components/common/styles/global';
+import GlobalStyle from '../../styles/global';
 import { PropsWithChildren } from 'react';
-import theme from '../../components/common/styles/theme';
+import theme from '../../styles/theme';
 
 const StyledPropvider = ({ children }: PropsWithChildren) => {
   return (
